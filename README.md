@@ -2,7 +2,7 @@
 
 This is a nodejs chat app using socket.io.
 
-I made it following this [Udmey](https://www.udemy.com/the-complete-nodejs-developer-course-2) course. 
+I made it following this [Udemy](https://www.udemy.com/the-complete-nodejs-developer-course-2) course. 
 
 A copy of the original source code can be found at [andrewjmead/node-course-2-chat-app](https://github.com/andrewjmead/node-course-2-chat-app).
 

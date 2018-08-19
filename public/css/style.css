@@ -193,3 +193,8 @@ button:disabled {
     margin-right: 0px;
   }
 }
+
+.source-code {
+  text-align: center;
+  margin-bottom: 10px;
+}

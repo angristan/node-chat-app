@@ -1,5 +1,5 @@
 pipeline:
-  backend:
+  build:
     image: node:10-alpine
     commands:
       - npm install

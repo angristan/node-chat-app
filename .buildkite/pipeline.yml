@@ -1,6 +1,0 @@
-steps:
-  - command: npm install && npm run test
-    plugins:
-      docker#v1.1.1:
-        image: "node:10"
-        workdir: /app

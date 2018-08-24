@@ -2,7 +2,7 @@ pipeline:
   npm-install:
     image: node:10-alpine
     commands:
-      - npm test
+      - npm install
 
 pipeline:
   tests:

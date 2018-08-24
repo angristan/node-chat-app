@@ -1,9 +1,17 @@
 pipeline:
-  build:
+  npm-install:
+    image: node:10-alpine
+    commands:
+      - npm test
+
+pipeline:
+  tests:
     image: node:10-alpine
     commands:
       - npm install
       - npm test
+    when:
+      status: [ success ]
 
 pipeline:
   telegram-notification:

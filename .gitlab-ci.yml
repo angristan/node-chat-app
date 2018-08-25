@@ -7,6 +7,7 @@ cache:
 stages:
   - install
   - test
+  - deploy
 
 npm_install:
   stage: install
@@ -16,3 +17,11 @@ npm_install:
 npm_test:
   script:
    - npm test
+
+heroku:
+  stage: deploy
+  script:
+    - apt-get update -yq
+    - apt-get install rubygems ruby-dev -y
+    - gem install dpl
+    - dpl --provider=heroku --app=angristan-node-chat-app --api-key=$HEROKU_API_KEY

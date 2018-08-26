@@ -35,14 +35,12 @@ io.on('connection', (socket) => {
     callback();
   });
 
-  socket.on('createMessage', (message, callback) => {
+  socket.on('createMessage', (message) => {
     const user = users.getUser(socket.id);
 
     if (user && isRealString(message.text)) {
       io.to(user.room).emit('newMessage', generateMessage(user.username, message.text));
     }
-
-    callback('');
   });
 
   socket.on('disconnect', () => {

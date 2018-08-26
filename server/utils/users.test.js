@@ -10,15 +10,15 @@ describe('Users', () => {
     users = new Users();
     users.users = [{
       id: '1',
-      name: 'Mike',
+      username: 'Mike',
       room: 'Node Course'
     }, {
       id: '2',
-      name: 'Jen',
+      username: 'Jen',
       room: 'React Course'
     }, {
       id: '3',
-      name: 'Julie',
+      username: 'Julie',
       room: 'Node Course'
     }];
   });
@@ -27,11 +27,11 @@ describe('Users', () => {
     const users = new Users();
     const user = {
       id: '123',
-      name: 'John',
+      username: 'John',
       room: 'Playground'
     };
 
-    const resUser = users.addUser(user.id, user.name, user.room);
+    const resUser = users.addUser(user.id, user.username, user.room);
     
     expect(users.users).toEqual([user]);
   });

@@ -25,3 +25,5 @@ heroku:
     - apt-get install rubygems ruby-dev -y
     - gem install dpl
     - dpl --provider=heroku --app=angristan-node-chat-app --api-key=$HEROKU_API_KEY
+  only:
+    - master

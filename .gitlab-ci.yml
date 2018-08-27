@@ -9,16 +9,16 @@ stages:
   - test
   - deploy
 
-npm_install:
+Install modules:
   stage: install
   script:
    - npm install
 
-npm_test:
+Run tests:
   script:
    - npm test
 
-heroku:
+Deploy to Heroku:
   stage: deploy
   script:
     - apt-get update -yq

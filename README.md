@@ -6,8 +6,6 @@ I made it following this [Udemy](https://www.udemy.com/the-complete-nodejs-devel
 
 A copy of the original source code can be found at [andrewjmead/node-course-2-chat-app](https://github.com/andrewjmead/node-course-2-chat-app).
 
-You can find a running version of the app at https://angristan-node-chat-app.herokuapp.com/!
-
 Libraries used:
 
 - [socket.io](https://github.com/socketio/socket.io)
